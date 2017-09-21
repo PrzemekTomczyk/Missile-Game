@@ -117,7 +117,7 @@ struct Missile
 			// check if launch code has been entered correctly
 			if (userCode == launchCode)
 			{
-				// clear function that clears console/cout stream
+				// 'clear function' (2 lines of code that are in clear() function i made) that clears console/cout stream
 				std::cout << std::flush;
 				system("cls");
 				std::cout << "Launch code entered correctly." << std::endl;
@@ -126,7 +126,7 @@ struct Missile
 			}
 			else
 			{
-				// clear function that clears console/cout stream
+				// 'clear function' (2 lines of code that are in clear() function i made) that clears console/cout stream
 				std::cout << std::flush;
 				system("cls");
 				// clear error flag as 'menuInput' has been reset
@@ -212,7 +212,7 @@ struct Missile
 				// function 'tolower' to convert string 'userInput' into lower case letters
 				userInput[i] = tolower(userInput[i]);
 			}
-			 // clear function that clears console/cout stream
+			 // 'clear function' (2 lines of code that are in clear() function i made) that clears console/cout stream
 			std::cout << std::flush;
 			system("cls");
 			// if user entered explosive then set payload to explosive, flip validInput and warheadSelected to true
