@@ -118,7 +118,8 @@ struct Missile
 			if (userCode == launchCode)
 			{
 				// clear function that clears console/cout stream
-				clear();
+				std::cout << std::flush;
+				system("cls");
 				std::cout << "Launch code entered correctly." << std::endl;
 				// set bool to true for menu checking
 				launchConfirmed = true;
@@ -126,7 +127,8 @@ struct Missile
 			else
 			{
 				// clear function that clears console/cout stream
-				clear();
+				std::cout << std::flush;
+				system("cls");
 				// clear error flag as 'menuInput' has been reset
 				std::cin.clear();
 				// ignore X new lines so it doesn't take trash that is on the same line
@@ -211,7 +213,8 @@ struct Missile
 				userInput[i] = tolower(userInput[i]);
 			}
 			 // clear function that clears console/cout stream
-			clear();
+			std::cout << std::flush;
+			system("cls");
 			// if user entered explosive then set payload to explosive, flip validInput and warheadSelected to true
 			if (userInput == "explosive")
 			{
@@ -233,7 +236,9 @@ struct Missile
 			{
 				std::cout << "Invalid missile type!" << std::endl << std::flush;
 				// clear console window and pause
-				clearPause();
+				std::cout << std::flush;
+				system("cls");
+				system("pause");
 				warheadSelected = false;
 			}
 
